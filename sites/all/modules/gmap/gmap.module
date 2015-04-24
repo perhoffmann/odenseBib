@@ -930,7 +930,7 @@ function theme_gmap($variables) {
   // @@@ Bdragon sez: Becw, this doesn't belong here. Theming needs to get fixed instead..
   if (isset($map['markers'])) {
     foreach ($map['markers'] as $i => $marker) {
-      if ($marker['text']) {
+      if (isset($marker['text'])) {
         $map['markers'][$i]['text'] = '<div class="gmap-popup">' . $marker['text'] . '</div>';
       }
     }
