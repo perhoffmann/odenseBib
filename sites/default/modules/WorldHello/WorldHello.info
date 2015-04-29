@@ -1,3 +1,4 @@
 name = WorldHello
 description = This is a test module for helloworld in a block
+package = Custom 
 core = 7.x

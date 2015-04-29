@@ -9,9 +9,10 @@
 function WorldHello_help($path,$arg){
 	if($path == 'admin/help#WorldHello'){
 
-			$output = '<h3>' . t('About').'</h3>';
-			$output .= '<p>' . t('We want to say Hello WORLD').'</p>';
-			return $output;
+			//$output = '<h3>' . t('About').'</h3>';
+			//$output .= '<p>' . t('We want to say Hello WORLD').'</p>';
+			//return $output;
+			return t('This is to test help....');
 		}
 }
 
