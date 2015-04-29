@@ -30,9 +30,13 @@ function WorldHello_block_info(){
 
 function WorldHello_block_view($block_name=''){
 	if($block_name == 'WorldHelloblock'){
+		if(!isset($name)){
+			$name = $GLOBALS['user'] -> name;
+		}
+		return $name;
 		 $list = array();	
 	  		for ($i=0; $i < 20; $i++) { 
-				  $list[$i] = t('HAAAALLOOOOO WORLD' . $i); 
+				  $list[$i] = t('HAAAALLOOOOO WORLD' . $i .$name ); 
 			  }
 			
 			$theme_args = array('items' => $list, 'type' => 'ul');
