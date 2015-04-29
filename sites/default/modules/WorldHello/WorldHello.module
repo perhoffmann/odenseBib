@@ -7,12 +7,13 @@
 *Implements hook_help().
 */
 function WorldHello_help($path,$arg){
+	$output = '';
 	if($path == 'admin/help#WorldHello'){
 
-			//$output = '<h3>' . t('About').'</h3>';
-			//$output .= '<p>' . t('We want to say Hello WORLD').'</p>';
-			//return $output;
-			return t('This is to test help....');
+			$output = '<h3>' . t('About').'</h3>';
+			$output .= '<p>' . t('We want to say Hello WORLD').'</p>';
+			return $output;
+			//return t('This is to test help....');
 		}
 }
 
