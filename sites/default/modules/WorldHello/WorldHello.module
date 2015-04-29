@@ -1,0 +1,49 @@
+<?php
+/**
+*@file
+*Thisisthemainmodulefile.
+*/
+/**
+*Implements hook_help().
+*/
+function WorldHello_help($path,$arg){
+	if($path == 'admin/help#WorldHello'){
+
+			$output = '<h3>' . t('About').'</h3>';
+			$output .= '<p>' . t('We want to say Hello WORLD').'</p>';
+			return $output;
+		}
+}
+
+ /**
+*Implements hook_block_info().
+*/
+function WorldHello_block_info(){
+	$blocks=array();
+	$blocks['WorldHelloblock']=array(
+		'info' => t('A block to say hello in'),
+	);
+	return$blocks;
+}
+
+function WorldHello_block_view($block_name=''){
+	if($block_name == 'WorldHelloblock'){
+		 $list = array();	
+	  		for ($i=0; $i < 20; $i++) { 
+				  $list[$i] = t('HAAAALLOOOOO WORLD' . $i); 
+			  }
+			
+			$theme_args = array('items' => $list, 'type' => 'ul');
+			
+			$content = theme('item_list', $theme_args);
+			
+			$blocks = array(
+			'subject' => t('Web dev 1 semester hello world '),
+			'content' => $content,
+			);
+			//if($debug){echo 'here is 3';}
+			return $blocks;
+	
+	}
+}
+?>
