@@ -211,7 +211,11 @@ function node_access_test_node_insert($node) {
 }
 
 /**
+<<<<<<< HEAD
  * Implements hook_node_update().
+=======
+ * Implements hook_nodeapi_update().
+>>>>>>> origin/master
  */
 function node_access_test_node_update($node) {
   _node_access_test_node_write($node);

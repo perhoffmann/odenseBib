@@ -606,8 +606,13 @@ function hook_cron() {
  * @return
  *   An associative array where the key is the queue name and the value is
  *   again an associative array. Possible keys are:
+<<<<<<< HEAD
  *   - 'worker callback': The name of an implementation of
  *     callback_queue_worker().
+=======
+ *   - 'worker callback': The name of the function to call. It will be called
+ *     with one argument, the item created via DrupalQueue::createItem().
+>>>>>>> origin/master
  *   - 'time': (optional) How much time Drupal should spend on calling this
  *     worker in seconds. Defaults to 15.
  *   - 'skip on cron': (optional) Set to TRUE to avoid being processed during
@@ -1910,8 +1915,14 @@ function hook_init() {
 /**
  * Define image toolkits provided by this module.
  *
+<<<<<<< HEAD
  * The file which includes each toolkit's functions must be included in this
  * hook.
+=======
+ * The file which includes each toolkit's functions must be declared as part of
+ * the files array in the module .info file so that the registry will find and
+ * parse it.
+>>>>>>> origin/master
  *
  * The toolkit's functions must be named image_toolkitname_operation().
  * where the operation may be:
@@ -3713,9 +3724,14 @@ function hook_registry_files_alter(&$files, $modules) {
  *
  * Any tasks you define here will be run, in order, after the installer has
  * finished the site configuration step but before it has moved on to the
+<<<<<<< HEAD
  * final import of languages and the end of the installation. This is invoked
  * by install_tasks().  You can have any number of custom tasks to perform
  * during this phase.
+=======
+ * final import of languages and the end of the installation. You can have any
+ * number of custom tasks to perform during this phase.
+>>>>>>> origin/master
  *
  * Each task you define here corresponds to a callback function which you must
  * separately define and which is called when your task is run. This function
@@ -3808,8 +3824,11 @@ function hook_registry_files_alter(&$files, $modules) {
  *
  * @see install_state_defaults()
  * @see batch_set()
+<<<<<<< HEAD
  * @see hook_install_tasks_alter()
  * @see install_tasks()
+=======
+>>>>>>> origin/master
  */
 function hook_install_tasks(&$install_state) {
   // Here, we define a variable to allow tasks to indicate that a particular,
@@ -3912,8 +3931,11 @@ function hook_html_head_alter(&$head_elements) {
 /**
  * Alter the full list of installation tasks.
  *
+<<<<<<< HEAD
  * This hook is invoked on the install profile in install_tasks().
  *
+=======
+>>>>>>> origin/master
  * @param $tasks
  *   An array of all available installation tasks, including those provided by
  *   Drupal core. You can modify this array to change or replace any part of
@@ -3921,9 +3943,12 @@ function hook_html_head_alter(&$head_elements) {
  *   is selected.
  * @param $install_state
  *   An array of information about the current installation state.
+<<<<<<< HEAD
  *
  * @see hook_install_tasks()
  * @see install_tasks()
+=======
+>>>>>>> origin/master
  */
 function hook_install_tasks_alter(&$tasks, $install_state) {
   // Replace the "Choose language" installation task provided by Drupal core
@@ -4811,6 +4836,7 @@ function hook_filetransfer_info_alter(&$filetransfer_info) {
  */
 
 /**
+<<<<<<< HEAD
  * Work on a single queue item.
  *
  * Callback for hook_cron_queue_info().
@@ -4833,6 +4859,8 @@ function callback_queue_worker($queue_item_data) {
 }
 
 /**
+=======
+>>>>>>> origin/master
  * Return the URI for an entity.
  *
  * Callback for hook_entity_info().

@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 Drupal 7.37, 2015-05-07
 -----------------------
 - Fixed a regression in Drupal 7.36 which caused certain kinds of content types
@@ -77,6 +78,8 @@ Drupal 7.36, 2015-04-01
 - Numerous API documentation improvements.
 - Additional automated test coverage.
 
+=======
+>>>>>>> origin/master
 Drupal 7.35, 2015-03-18
 ----------------------
 - Fixed security issues (multiple vulnerabilities). See SA-CORE-2015-001.
@@ -765,7 +768,11 @@ Drupal 7.1, 2011-05-25
 ----------------------
 - Fixed security issues (Cross site scripting, File access bypass), see SA-CORE-2011-001.
 
+<<<<<<< HEAD
 Drupal 7.0, 2011-01-05
+=======
+Drupal 7.0, 2011-01-05 
+>>>>>>> origin/master
 ----------------------
 - Database:
     * Fully rewritten database layer utilizing PHP 5's PDO abstraction layer.
@@ -1264,7 +1271,11 @@ Drupal 5.20, 2009-09-16
 Drupal 5.19, 2009-07-01
 -----------------------
 - Fixed security issues (Cross site scripting and Password leakage in URL), see
+<<<<<<< HEAD
   SA-CORE-2009-007.
+=======
+  SA-CORE-2009-007.          
+>>>>>>> origin/master
 - Fixed a variety of small bugs.
 
 Drupal 5.18, 2009-05-13

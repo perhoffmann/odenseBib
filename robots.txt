@@ -12,6 +12,12 @@
 #
 # For more information about the robots.txt standard, see:
 # http://www.robotstxt.org/robotstxt.html
+<<<<<<< HEAD
+=======
+#
+# For syntax checking, see:
+# http://www.frobee.com/robots-txt-check
+>>>>>>> origin/master
 
 User-agent: *
 Crawl-delay: 10

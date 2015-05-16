@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 CONTENTS OF THIS FILE
 ---------------------
 

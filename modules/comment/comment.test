@@ -13,7 +13,11 @@ class CommentHelperCase extends DrupalWebTestCase {
   function setUp() {
     parent::setUp('comment', 'search');
     // Create users and test node.
+<<<<<<< HEAD
     $this->admin_user = $this->drupalCreateUser(array('administer content types', 'administer comments', 'administer blocks', 'administer actions'));
+=======
+    $this->admin_user = $this->drupalCreateUser(array('administer content types', 'administer comments', 'administer blocks'));
+>>>>>>> origin/master
     $this->web_user = $this->drupalCreateUser(array('access comments', 'post comments', 'create article content', 'edit own comments'));
     $this->node = $this->drupalCreateNode(array('type' => 'article', 'promote' => 1, 'uid' => $this->web_user->uid));
   }
@@ -1974,6 +1978,7 @@ class CommentActionsTestCase extends CommentHelperCase {
   }
 
   /**
+<<<<<<< HEAD
    * Tests the unpublish comment by keyword action.
    */
   public function testCommentUnpublishByKeyword() {
@@ -2009,6 +2014,8 @@ class CommentActionsTestCase extends CommentHelperCase {
   }
 
   /**
+=======
+>>>>>>> origin/master
    * Verify that a watchdog message has been entered.
    *
    * @param $watchdog_message

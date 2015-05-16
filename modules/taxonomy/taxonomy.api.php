@@ -212,7 +212,11 @@ function hook_taxonomy_term_view($term, $view_mode, $langcode) {
  * documentation respectively for details.
  *
  * @param $build
+<<<<<<< HEAD
  *   A renderable array representing the term.
+=======
+ *   A renderable array representing the node content.
+>>>>>>> origin/master
  *
  * @see hook_entity_view_alter()
  */
